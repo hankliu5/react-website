@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import MenuButton from "./MenuButton";
 import Menu from "./Menu";
 import Context from "./Context";
-import "./MenuContainer.css"
+import "./styles/MenuContainer.css"
 
 
 class MenuContainer extends Component {
@@ -37,7 +37,6 @@ class MenuContainer extends Component {
     }
 
     render() {
-        var visibility = this.state.visible ? "hide" : "show"
         return (
             <div className="row">
                 <Menu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible} />
