@@ -38,20 +38,24 @@ class MenuContainer extends Component {
     render() {
         var visibility = this.state.visible ? "hide" : "show"
         return (
-            <div>
-                <MenuButton handleMouseDown={this.handleMouseDown} />
+            <div class="row">
                 <Menu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible} />
-                <div id="flyoutContext" onMouseDown={this.handleMouseDown} className={visibility}>
-                    <p>Can you spot the item that doesn't belong?</p>
-                    <ul>
-                        <li>Lorem</li>
-                        <li>Ipsum</li>
-                        <li>Dolor</li>
-                        <li>Sit</li>
-                        <li>Bumblebees</li>
-                        <li>Aenean</li>
-                        <li>Consectetur</li>
-                    </ul>
+                <div class="column left">
+                    <MenuButton handleMouseDown={this.handleMouseDown} />
+                </div>
+                <div class="column right">
+                    <div id="flyoutContext" onMouseDown={this.handleMouseDown} className={visibility}>
+                        <p>Can you spot the item that doesn't belong?</p>
+                        <ul>
+                            <li>Lorem</li>
+                            <li>Ipsum</li>
+                            <li>Dolor</li>
+                            <li>Sit</li>
+                            <li>Bumblebees</li>
+                            <li>Aenean</li>
+                            <li>Consectetur</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         );

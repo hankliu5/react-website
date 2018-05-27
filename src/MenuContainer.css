@@ -7,11 +7,19 @@
     z-index: 1000;
 }
 
-#flyoutContext.hide {
-    transform: translate3d(15vw, 0, 0);
+
+.row {
+    display: flex;
 }
 
-#flyoutContext.show {
-    transform: translate3d(0vw, 0, 0);
-    overflow: hidden;
+.column {
+    float: left;
+}
+
+.left {
+    width: 15vw;
+}
+
+.right {
+    width: 85vw;
 }
