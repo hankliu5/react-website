@@ -1,0 +1,19 @@
+#context {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow: scroll;
+    z-index: 1000;
+    height: 100vh;
+    transition: transform .3s cubic-bezier(0, .52, 0, 1);
+}
+
+#context.show {
+    transform: translate3d(15vw, 0, 0);
+}
+
+#context.hide {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+}
