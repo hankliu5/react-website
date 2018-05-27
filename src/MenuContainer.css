@@ -1,0 +1,17 @@
+#flyoutContext {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    transition: transform .3s cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    z-index: 1000;
+}
+
+#flyoutContext.hide {
+    transform: translate3d(15vw, 0, 0);
+}
+
+#flyoutContext.show {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+}
