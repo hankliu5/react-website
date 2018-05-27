@@ -1,25 +1,19 @@
-#flyoutContext {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    transition: transform .3s cubic-bezier(0, .52, 0, 1);
-    overflow: scroll;
-    z-index: 1000;
-}
-
-
 .row {
     display: flex;
 }
 
 .column {
     float: left;
+    height: 100vh;
+    margin-top: 25px;
 }
 
 .left {
     width: 15vw;
+    margin-left: 2vw;
 }
 
 .right {
+    margin-left: 18vw;
     width: 85vw;
 }
